@@ -1,0 +1,90 @@
+hellow guys wellcome back to my Youtube chanel to finaly mai kahana chahata hu ki mai ab react js sikhna suru kr rha hu.....
+
+                            PART - 1    
+
+react kya hai?
+                react ek javascript ki library hai jiska soul purpose UI create krna hai . react is all about component.
+                React एक JavaScript लाइब्रेरी है जिसका उपयोग यूज़र इंटरफेस (UI) बनाने के लिए किया जाता है। इसे Facebook द्वारा मेंटेन किया जाता है।
+                React हमें interactive और dynamic web applications बनाने में मदद करता है।
+
+
+
+library kya hai? 
+                    library ek yaisa sagment of code hai jahan par bahut sari functionalities pahle se provided hai. user ka jo code hai wo invoke kr sakta hai sari ki sari functionalities ko.
+
+    react me ham measurly jaha code kr rhe honge wahan components ko use kr rhe honge. just like function in javascript.
+
+    javascript imparitive approach pr based hota hai.
+    react me sirf end state batana hota hai sara task react khud handale kr leta hai. so react declarative approach based hota hai.
+    react ka alternative bahut se framwork hain jaise Angular, Vue etc.
+
+
+SPA  kya hai?
+                SPA stands for "single page application".
+
+
+Component-Based Architecture:-
+
+            React में सब कुछ components के रूप में बनाया जाता है।
+            Components छोटे, reusable code blocks होते हैं जो UI के अलग-अलग हिस्सों को संभालते हैं।
+            प्रत्येक component एक function या class होती है जो HTML जैसा JSX (JavaScript XML) रिटर्न करता है।
+
+
+JSX (JavaScript XML)
+
+            JSX एक syntax extension है जो JavaScript के अंदर HTML को लिखने की सुविधा देता है।
+            यह browser के अंदर सामान्य JavaScript में compile हो जाता है।
+
+            function Welcome() {
+                    return <h1>Namaste, React!</h1>;
+                }
+
+
+Rendering Components:-
+
+            ReactDOM का उपयोग करके आप components को DOM (Document Object Model) में render कर सकते हैं।
+
+            import React from 'react';
+            import ReactDOM from 'react-dom';
+
+            ReactDOM.render(<Welcome />, document.getElementById('root'));
+
+
+Props (Properties):-
+
+            Props का उपयोग components के बीच डेटा पास करने के लिए किया जाता है।
+            ये read-only होते हैं और component के अंदर उन्हें modify नहीं किया जा सकता।
+
+
+State:-
+
+            State किसी component के डेटा को track करने के लिए उपयोग किया जाता है जो समय के साथ बदल सकता है।
+            State component के अंदर manage होता है और यह props से अलग होता है।
+
+            import React, { useState } from 'react';
+
+            function Counter() {
+                const [count, setCount] = useState(0);
+  
+                    return (
+                             <div>
+                             <p>Count: {count}</p>
+                             <button onClick={() => setCount(count + 1)}>Increase</button>
+                             </div>
+                        );
+            }
+
+
+
+React Developer Tools:-
+
+            React Developer Tools एक browser extension है जिससे आप React components की hierarchy और उनके props/state को inspect कर सकते हैं।
+
+
+Create React App (CRA):-
+
+            "Create React App" एक command-line tool है जो आपको बिना configuration के एक React project शुरू करने की सुविधा देता है।
+
+            npx create-react-app my-app
+            cd my-app
+            npm start
