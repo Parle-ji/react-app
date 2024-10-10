@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
+  function challenge(){
+    alert('Mujhe pta hai padhne ka mn nhi krta lekin tu kuchh bhi kr ke apne aap ko jeet')
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+
+        <header className="text-center text-[2.2rem] font-bold text-red-700  rounded leading-[1] py-1 border-2 border-blue-700 max-w-[1200px] m-auto mb-4">
+          {/* Tailwindcss ko react app me install kr liya iski bhen ki maze maze */}
+          <h1 onClick={challenge}> Kya tum apne man ko jeet sakte ho???</h1>
+        </header>
+
+   
   );
 }
 
