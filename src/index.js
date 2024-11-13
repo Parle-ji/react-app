@@ -2,8 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-// import App from './App';
-// import ImgGallary from './Components/ImgGallary';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import App from './App';
+import ImgGallary from './Components/ImgGallary';
+import CoursesApp from './CoursesApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,10 +15,10 @@ root.render(
 
     {/* component loader */}
     <div className='w-[90%] max-w-[1300px] m-auto '>
-
-      {/* <App></App> */}
-      {/* <ImgGallary></ImgGallary> */}
-      
+      <ToastContainer/>
+      <App></App>
+      <ImgGallary></ImgGallary>
+      {<CoursesApp/>}
    
 
 
