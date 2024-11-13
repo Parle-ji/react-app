@@ -5,9 +5,9 @@ import reportWebVitals from './reportWebVitals';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import App from './App';
-import ImgGallary from './Components/ImgGallary';
-import CoursesApp from './CoursesApp';
+// import App from './App';
+// import ImgGallary from './Components/ImgGallary';
+// import CoursesApp from './CoursesApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,9 +16,9 @@ root.render(
     {/* component loader */}
     <div className='w-[90%] max-w-[1300px] m-auto '>
       <ToastContainer/>
-      <App></App>
-      <ImgGallary></ImgGallary>
-      {<CoursesApp/>}
+      {/* <App></App> */}
+      {/* <ImgGallary></ImgGallary> */}
+      {/* {<CoursesApp/>} */}
    
 
 
