@@ -1,0 +1,117 @@
+useState Hook kya hai?
+
+                        functional components me state ko manage krta hai. or state change hone pr
+                        UI ko update krta hai.
+
+agar mai chahata hu ki mere kisi bhi variable ko change karne pr wo hi same
+value mere UI me show ho to mai wahan useState hook ka pryog krta hu.
+
+
+        syntax:- const [variable, setVariable] = useState(value);
+
+example:-
+
+
+        const [count, setCount] = useState(0);
+
+        function Counter(){
+            return setCount(++count);
+        }
+
+
+useState():- iske bracket me array, Object, null, number, string koi si bhi 
+            value dali ja skti hai as pr use.
+
+
+                    lesson -  2
+
+
+useEffect:- 
+
+            components ke render hone ke baad side effect jaise data fetching,
+            event listeners ko run krne ke liye use kiya jaata hai.
+
+useEffect ek React hook hai jo apke components me extra code likhane me help
+krta hai. istemaal aamtaur pr data lane, subscription banane ya doosare side
+effect manage karne ke liye kiya jaata hai.
+
+
+maana hamare app.js component me useEffect hook use kiya gya hai, jaise hi 
+app.js component ka code run ho jayega waise hi useEffect hook ka code bhi run 
+hona suru hojayega.
+
+
+agar mujhe har ek render par koi ek perticular (xyz) kaam krna hai to mai 
+waha pr useEffect hook ka use krunga.
+
+syntax:-        useEffect(){
+                        console.log(xyz);
+                }
+
+uprokt syntax kisi bhi prkar ke side effect ko run kar skta hai.
+jaise:-
+
+        1. data fetching
+        2. subscriptions
+        3. timers
+        4. logging
+        5. DOM manipulation
+        6. event listeners
+        7. Animations
+        8. cleanup
+
+useEffect ke 4 variations hote hain.
+
+1. har render par chalane wala
+
+            useEffect(()=>{
+                console.log('Rendering done');
+            });
+
+2. ye sirf ek baar chalta hai (mount ke time). jisame call back function me 
+    array [ ] pass kr deta hu.
+
+            useEffect(()=>{
+                console.log('Rendering done');
+            });
+
+empty array ka mtlab ye effect sirf ek baar chalega.
+
+3. first render or jab kabhi dependancy change ho tabhi chalta hai.
+
+            const [count, setCount] = useState(0);
+
+            useEffect(()=>{
+                console.log('change observed');
+            }[count]);
+
+4. unmount hone par cleanup handale krta hai.
+
+            useEffect(()=>{
+                console.log('listeners added');
+
+                return()=>{
+                    console.log('listeners removed');
+                }
+            }[count]);
+
+ye cleanup function component unmount hone pr chalega dependancy array deside
+karta hai effect kab chalega.
+
+
+Mounting:-
+            jab component render hoke DOM me aata hai.
+
+UnMounting:- jab component DOM se hata diya jaata hai.
+
+
+I:- class-Based Component me lifecycle methods;
+
+1. componentDidMount():-- component render hone ke baad ek baar chalta hai.
+2. componetDidUpdate():-- component re-render hone par state/props change hone 
+                          ke baad chalta hain.
+3. componentWillUnmount():-- component unmount hone se pahle cleanup ke liye chalti
+                             hai.
+                            
+                        
+                        NOW THIS LESSON IS ENDED
