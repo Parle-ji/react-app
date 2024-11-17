@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // import App from './App';
 // import ImgGallary from './Components/ImgGallary';
+import TestimoniaApp from './TestimoniaApp';
 import CoursesApp from './CoursesApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,7 +20,7 @@ root.render(
       {/* <App></App> */}
       {/* <ImgGallary></ImgGallary> */}
       {/*<CoursesApp/> */}
-   
+      {<TestimoniaApp/>}
 
 
     </div>
