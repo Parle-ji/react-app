@@ -7,8 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // import App from './App';
 // import ImgGallary from './Components/ImgGallary';
-import TestimoniaApp from './TestimoniaApp';
-import CoursesApp from './CoursesApp';
+// import TestimoniaApp from './TestimoniaApp';
+// import CoursesApp from './CoursesApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,8 +19,8 @@ root.render(
       <ToastContainer/>
       {/* <App></App> */}
       {/* <ImgGallary></ImgGallary> */}
-      {/*<CoursesApp/> */}
-      {<TestimoniaApp/>}
+      {/* <CoursesApp/> */}
+      {/* {<TestimoniaApp/>} */}
 
 
     </div>
