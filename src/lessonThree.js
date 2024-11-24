@@ -162,7 +162,7 @@ const LessonThree = () => {
       <br />
 
       {/* submit button */}
-      <input type="submit" value="submit" />
+      <input type="submit" value="submit" className="py-1 px-4 bg-white rounded-xl"/>
     </form>
   );
 };
