@@ -9,7 +9,8 @@ import 'react-toastify/dist/ReactToastify.css';
 // import ImgGallary from './Components/ImgGallary';
 // import TestimoniaApp from './TestimoniaApp';
 // import CoursesApp from './CoursesApp';
-import LessonThree from './LessonThree'
+// import LessonThree from './LessonThree'
+import HomeWorkOne from './Components/HomeWorkOne';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div className="overflow-x-hidden h-[100vh] w-[100vw] bg-gradient-to-r from-violet-300 to-fuchsia-200	">
@@ -21,8 +22,8 @@ root.render(
       {/* <ImgGallary></ImgGallary> */}
       {/* <CoursesApp/> */}
       {/* {<TestimoniaApp/>} */}
-      {<LessonThree/>}
-
+      {/*<LessonThree/>*/}
+      <HomeWorkOne/>
     </div>
   </div>
 );
