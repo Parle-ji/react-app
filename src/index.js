@@ -17,7 +17,7 @@ root.render(
     className="overflow-x-hidden h-[100vh] w-[100vw] bg-cyan-900"
   >
     {/* component loader */}
-    <div className="w-[90%] max-w-[1300px] m-auto ">
+    <div className="w-[90%] max-w-[1300px] mx-auto ">
       <ToastContainer />
       {/* <App></App> */}
       {/* <ImgGallary></ImgGallary> */}
