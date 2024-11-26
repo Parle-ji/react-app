@@ -5,7 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter } from "react-router-dom";
-import ReactRouter from "./ReactRouter";
+// import ReactRouter from "./ReactRouter";
 
 // import App from './App';
 // import ImgGallary from './Components/ImgGallary';
@@ -22,7 +22,7 @@ root.render(
       <ToastContainer />
       {
         <BrowserRouter>
-          <ReactRouter />
+          {/* <ReactRouter /> */}
         </BrowserRouter>
       }
       {/* Uncomment components as needed */}
@@ -32,6 +32,7 @@ root.render(
       {/* {<TestimoniaApp />} */}
       {/* <LessonThree /> */}
       {/* <HomeWorkOne /> */}
+      
     </div>
   </div>
 );
