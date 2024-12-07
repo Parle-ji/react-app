@@ -38,6 +38,11 @@ const NotionSignupForm = ({ setIsLoggedIn }) => {
   function toggleConfirmPasswordVisibility() {
     setShowConfirmPassword((prev) => !prev);
   }
+  const accountData = {...formData}
+  const finalData = {
+    ...accountData,
+    accountType,
+  }
   return (
     <div>
       {/* student instructor tab */}
