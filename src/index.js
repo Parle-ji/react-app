@@ -13,7 +13,11 @@ import { BrowserRouter } from "react-router-dom";
 // import CoursesApp from './CoursesApp';
 // import LessonThree from './LessonThree';
 // import HomeWorkOne from './Components/HomeWorkOne';
-import StudyNotionApp from "./pages/StudyNotionApp";
+import RandomGifApp from "./Components/RandomGifApp";
+
+
+
+// import StudyNotionApp from "./pages/StudyNotionApp";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <div className="overflow-x-hidden h-[100vh] w-[100vw] bg-gradient-to-r from-violet-300 to-fuchsia-200">
@@ -23,7 +27,7 @@ root.render(
       {
         <BrowserRouter>
           {/* <ReactRouter /> */}
-          <StudyNotionApp/>
+          {/* <StudyNotionApp/> */}
         </BrowserRouter>
       }
       {/* Uncomment components as needed */}
@@ -33,7 +37,7 @@ root.render(
       {/* {<TestimoniaApp />} */}
       {/* <LessonThree /> */}
       {/* <HomeWorkOne /> */}
-      
+      <RandomGifApp/>
     </div>
   </div>
 );
