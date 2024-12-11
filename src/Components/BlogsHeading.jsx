@@ -2,7 +2,9 @@ import React from 'react'
 
 const BlogsHeading = () => {
   return (
-    <div className='text-2xl uppercase font-bold w-full text-center py-2 shadow-lg'>code help blogs</div>
+    <div className=" w-11/12 max-w-[1200px] fixed top-0  rounded bg-white text-xl uppercase font-bold text-center py-1   shadow-lg z-50">
+      Code Help Blogs
+    </div>
   )
 }
 

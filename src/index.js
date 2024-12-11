@@ -17,6 +17,7 @@ import { BrowserRouter } from "react-router-dom";
 
 
 import BlogsApp from "./BlogsApp";
+import BlogsContextProvider from './context/BlogsContext'
 // import StudyNotionApp from "./pages/StudyNotionApp";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
