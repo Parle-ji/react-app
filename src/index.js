@@ -13,6 +13,10 @@ import { BrowserRouter } from "react-router-dom";
 // import CoursesApp from './CoursesApp';
 // import LessonThree from './LessonThree';
 // import HomeWorkOne from './Components/HomeWorkOne';
+import RandomGifApp from "./Components/RandomGifApp";
+
+
+
 // import StudyNotionApp from "./pages/StudyNotionApp";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -33,7 +37,7 @@ root.render(
       {/* {<TestimoniaApp />} */}
       {/* <LessonThree /> */}
       {/* <HomeWorkOne /> */}
-      
+      <RandomGifApp/>
     </div>
   </div>
 );
