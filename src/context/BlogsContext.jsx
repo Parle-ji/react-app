@@ -8,6 +8,7 @@ function BlogsContextProvider({ children }) {
   const [page, setPage] = useState(1);
   const [posts, setPosts] = useState([]);
   const [totalPages, setTotalPages] = useState(null);
+  const [mode, setMode] = useState(false)
 
   async function fetchBlogsPosts(page = 1) {
     setLoading(true);
@@ -33,18 +34,25 @@ function BlogsContextProvider({ children }) {
     setPage(page);
     fetchBlogsPosts(page);
   }
-
+  function changeMode(){
+    // console.log(mode);
+    setMode(!mode)
+    console.log(mode);
+}
   const value = {
     loading,
     setLoading,
     page,
     setPage,
+    mode,
+    setMode,
     posts,
     setPosts,
     totalPages,
     setTotalPages,
     fetchBlogsPosts,
     handlePageChange,
+    changeMode,
   };
 
   return (

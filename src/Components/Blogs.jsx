@@ -4,7 +4,7 @@ import Spinner from "./Spinner";
 const Blogs = () => {
   const { loading, posts } = useContext(BlogsAppContext);
   return (
-    <div className="min-h-screen  w-11/12 max-w-[550px] text-sm justify-center  flex flex-col items-center mx-auto pb-2 gap-y-4 my-10">
+    <div className="min-h-screen select-none w-11/12 max-w-[550px] text-sm justify-center  flex flex-col items-center mx-auto pb-2 gap-y-4 my-6">
       {loading ? (
         <Spinner />
       ) : posts.length === 0 ? (
