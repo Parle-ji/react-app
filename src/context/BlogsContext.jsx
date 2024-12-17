@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import { baseUrl } from "../Components/BlogsApi";
+import { useNavigate } from "react-router-dom";
 
 export const BlogsAppContext = createContext();
 
@@ -8,11 +9,18 @@ function BlogsContextProvider({ children }) {
   const [page, setPage] = useState(1);
   const [posts, setPosts] = useState([]);
   const [totalPages, setTotalPages] = useState(null);
-  const [mode, setMode] = useState(false)
-
-  async function fetchBlogsPosts(page = 1) {
+  const [mode, setMode] = useState(false);
+  const navigate = useNavigate()
+  async function fetchBlogsPosts(page = 1, tag = null, category = null) {
     setLoading(true);
-    const url = `${baseUrl}?page=${page}`;
+    
+    let url = `${baseUrl}?page=${page}`;
+    if (tag) {
+      url += `&tag=${tag}`;
+    }
+    if (category) {
+      url += `&category=${category}`;
+    }    
     try {
       const result = await fetch(url);
       const data = await result.json();
@@ -23,22 +31,23 @@ function BlogsContextProvider({ children }) {
       setTotalPages(data.totalPages);
     } catch (error) {
       console.error("API Fetch Error:", error);
+      // Optional fallback state
       setPage(1);
       setPosts([]);
-      setTotalPages(null);
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   }
 
   function handlePageChange(page) {
-    setPage(page);
+    navigate(`?page=${page}`);
     fetchBlogsPosts(page);
+  }  
+
+  function changeMode() {
+    setMode((prevMode) => !prevMode); // Toggle mode
   }
-  function changeMode(){
-    // console.log(mode);
-    setMode(!mode)
-    console.log(mode);
-}
+
   const value = {
     loading,
     setLoading,
@@ -63,4 +72,3 @@ function BlogsContextProvider({ children }) {
 }
 
 export default BlogsContextProvider;
- 

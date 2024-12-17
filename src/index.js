@@ -15,9 +15,8 @@ import { BrowserRouter } from "react-router-dom";
 // import HomeWorkOne from './Components/HomeWorkOne';
 // import RandomGifApp from "./Components/RandomGifApp";
 
-
 import BlogsApp from "./BlogsApp";
-import BlogsContextProvider from './context/BlogsContext'
+import BlogsContextProvider from "./context/BlogsContext";
 // import StudyNotionApp from "./pages/StudyNotionApp";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -29,6 +28,9 @@ root.render(
         <BrowserRouter>
           {/* <ReactRouter /> */}
           {/* <StudyNotionApp/> */}
+          <BlogsContextProvider>
+            <BlogsApp />
+          </BlogsContextProvider>
         </BrowserRouter>
       }
       {/* Uncomment components as needed */}
@@ -39,9 +41,6 @@ root.render(
       {/* <LessonThree /> */}
       {/* <HomeWorkOne /> */}
       {/* <RandomGifApp/> */}
-      <BlogsContextProvider>
-      <BlogsApp/>
-      </BlogsContextProvider>
     </div>
   </div>
 );

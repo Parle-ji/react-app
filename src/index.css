@@ -108,9 +108,9 @@ body {
     box-shadow: .2em -.2em 0 0 currentcolor;
   }
 }
-.active{
+/* .active{
   color: #fff;
   background: black;
   border-radius: 5px;
   padding: 2px 1rem;
-}
+} */
