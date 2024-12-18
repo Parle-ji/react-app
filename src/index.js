@@ -28,9 +28,10 @@ root.render(
         <BrowserRouter>
           {/* <ReactRouter /> */}
           {/* <StudyNotionApp/> */}
-          <BlogsContextProvider>
+          {/* <BlogsContextProvider>
             <BlogsApp />
-          </BlogsContextProvider>
+          </BlogsContextProvider> */}
+          
         </BrowserRouter>
       }
       {/* Uncomment components as needed */}
