@@ -17,6 +17,9 @@ import { BrowserRouter } from "react-router-dom";
 
 import BlogsApp from "./BlogsApp";
 import BlogsContextProvider from "./context/BlogsContext";
+import ReduxCounter from "./Components/ReduxCounter";
+import { Provider } from "react-redux";
+import { counterAppStore } from "./Redux/CounterStore";
 // import StudyNotionApp from "./pages/StudyNotionApp";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -31,7 +34,9 @@ root.render(
           {/* <BlogsContextProvider>
             <BlogsApp />
           </BlogsContextProvider> */}
-          
+          <Provider store={counterAppStore}>
+            <ReduxCounter />
+          </Provider>
         </BrowserRouter>
       }
       {/* Uncomment components as needed */}
