@@ -5,6 +5,8 @@ import reportWebVitals from "./reportWebVitals";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter } from "react-router-dom";
+import MyStoreApp from "./Components/MyStoreApp";
+
 // import ReactRouter from "./ReactRouter";
 
 // import App from './App';
@@ -15,11 +17,12 @@ import { BrowserRouter } from "react-router-dom";
 // import HomeWorkOne from './Components/HomeWorkOne';
 // import RandomGifApp from "./Components/RandomGifApp";
 
-import BlogsApp from "./BlogsApp";
-import BlogsContextProvider from "./context/BlogsContext";
-import ReduxCounter from "./Components/ReduxCounter";
+// import BlogsApp from "./BlogsApp";
+// import BlogsContextProvider from "./context/BlogsContext";
+// import ReduxCounter from "./Components/ReduxCounter";
 import { Provider } from "react-redux";
-import { counterAppStore } from "./Redux/CounterStore";
+import { store } from "./Redux/Mystore";
+// import { counterAppStore } from "./Redux/CounterStore";
 // import StudyNotionApp from "./pages/StudyNotionApp";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -34,8 +37,11 @@ root.render(
           {/* <BlogsContextProvider>
             <BlogsApp />
           </BlogsContextProvider> */}
-          <Provider store={counterAppStore}>
+          {/* <Provider store={counterAppStore}>
             <ReduxCounter />
+          </Provider> */}
+          <Provider store={store} >
+            <MyStoreApp />
           </Provider>
         </BrowserRouter>
       }
