@@ -26,8 +26,8 @@ const StoreHome = () => {
   }, []);
 
   return (
-    <div className="text-center">
-      <div className="flex flex-wrap justify-evenly gap-y-3 text-center w-11/12 max-w-[1050px] mx-auto bg-gray-500 my-4 rounded">
+    <div className="min-h-screen flex justify-center items-center">
+      <div className="flex flex-wrap justify-evenly gap-y-3 text-center w-11/12 max-w-[1050px] mx-auto pt-8 pb-2 rounded">
         {loading ? (
           <Spinner />
         ) : products.length === 0 ? (

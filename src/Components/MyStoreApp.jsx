@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 import CartNavbar from './CartNavbar'
 const MyStoreApp = () => {
   return (
-    <div className="w-11/12 pt-4 gap-x-8 bg-slate-800 mx-auto  min-h-screen select-none">
+    <div className="w-11/12   mx-auto  min-h-screen select-none relative">
         <div>
           <CartNavbar/>
         </div>
